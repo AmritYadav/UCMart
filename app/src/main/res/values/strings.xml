@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">UCMart</string>
+
+    <!-- Common -->
+    <string name="action_continue">Continue</string>
+
+    <!--Drawer-->
+    <string name="action_logout">Logout</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_my_orders">My Orders</string>
+    <string name="menu_contact_us">Contact us</string>
+    <string name="menu_feedback">Feedback</string>
+    <string name="menu_cart">Cart</string>
+
+    <!-- Registration -->
+    <string name="title_login">Login</string>
+    <string name="nav_verify_otp">Verify OTP</string>
+    <string name="label_login_subtitle">Please enter your Phone Number to continue</string>
+    <string name="label_otp_sent">An OTP has been sent to &lt;b>%s&lt;/b>. Please check and enter your OTP below.</string>
+    <string name="prompt_phone_number">Enter your 10-Digit Phone Number</string>
+    <string name="action_login_register">Login/Register</string>
+    <string name="action_verify_otp">Verify</string>
+
+    <!--Product-->
+    <string name="product_amount">\u20B9%1$s</string>
+    <string name="product_mrp_amount">MRP \u20B9%1$s</string>
+
+    <!--AddToCart-->
+    <string name="prompt_per_kg">/%1$s</string>
+    <string name="product_amount_unit">\u20B9%1$s /%2$s</string>
+    <string name="action_add_to_cart">Add product</string>
+
+    <!--Cart-->
+    <string name="prompt_total_amount">Total Amount</string>
+    <string name="action_place_order">Place order</string>
+    <string name="prompt_delivery_charge">*Shop for more than &lt;b>Rs 100&lt;/b> and get Free Delivery</string>
+    <string name="label_item_cost">Total item cost</string>
+    <string name="label_delivery_charge">Delivery charge</string>
+    <string name="label_total">Total</string>
+    <string name="placeholder_delivery_charge">+ \u20B9%1$s</string>
+</resources>

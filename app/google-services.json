@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "308740544008",
+    "firebase_url": "https://ucmart-e12b8.firebaseio.com",
+    "project_id": "ucmart-e12b8",
+    "storage_bucket": "ucmart-e12b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:308740544008:android:c8885344523be6a52323bd",
+        "android_client_info": {
+          "package_name": "com.ucmart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "308740544008-bsq33mkkan98b7qhgi1dthkj2akar1ua.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ucmart",
+            "certificate_hash": "33fc6c494bfad13f871f4c2ce9216271c40f2e99"
+          }
+        },
+        {
+          "client_id": "308740544008-a8hdvluc9es6ppbmm24inpc9fsu98ki7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjN8_STlO9-8eN1UqqdC4yzlYsOHeE7Hc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "308740544008-a8hdvluc9es6ppbmm24inpc9fsu98ki7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

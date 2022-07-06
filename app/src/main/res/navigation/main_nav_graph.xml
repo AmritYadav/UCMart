@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.ucmart.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_nav_products"
+            app:destination="@id/nav_products"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_nav_home_to_cartFragment"
+            app:destination="@id/nav_cart"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_products"
+        android:name="com.ucmart.ui.products.ProductsFragment"
+        tools:layout="@layout/fragment_products">
+        <argument
+            android:name="categoryId"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="categoryName"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_nav_products_to_nav_add_to_cart"
+            app:destination="@id/nav_add_to_cart" />
+        <action
+            android:id="@+id/action_nav_products_to_nav_cart"
+            app:destination="@id/nav_cart"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <dialog
+        android:id="@+id/nav_add_to_cart"
+        android:name="com.ucmart.ui.products.AddToCartDialogFragment"
+        tools:layout="@layout/fragment_add_to_cart_dialog">
+        <argument
+            android:name="product"
+            app:argType="com.ucmart.ui.products.model.Product" />
+    </dialog>
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="com.ucmart.ui.cart.CartFragment"
+        android:label="@string/menu_cart"
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_nav_cart_to_nav_login"
+            app:destination="@id/nav_login" />
+    </fragment>
+    <dialog
+        android:id="@+id/nav_login"
+        android:name="com.ucmart.ui.registration.LoginDialogFragment"
+        tools:layout="@layout/fragment_login_dialog" >
+        <action
+            android:id="@+id/action_nav_login_to_nav_verify_otp"
+            app:destination="@id/nav_verify_otp" />
+    </dialog>
+    <fragment
+        android:id="@+id/nav_verify_otp"
+        android:name="com.ucmart.ui.registration.VerifyOtpFragment"
+        android:label="@string/nav_verify_otp"
+        tools:layout="@layout/fragment_verify_otp">
+        <argument
+            android:name="phoneNumber"
+            app:argType="string" />
+    </fragment>
+</navigation>
